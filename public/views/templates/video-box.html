@@ -1,0 +1,20 @@
+<div ng-repeat="video in videos" class="col-md-3 col-lg-3">
+    <div class="ibox">
+        <div class="ibox-content product-box none-bg product-box-none-shadow no-borders">
+            <div class="">
+                <img ng-src="http://img.youtube.com/vi/{{video.link}}/sddefault.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="product-desc">
+                <span class="product-price">Khmer</span>
+                <a ui-sref="videos.play({id:video._id})"class="text-info"> {{video.title}}</a>
+
+                <div class="small m-t-xs ibox-des">
+                    {{video.description}}
+                </div>
+                <div class="m-t text-right">
+                    <a ui-sref="videos.play({id:video._id})" class="btn btn-xs btn-outline btn-danger">Play <i class="fa fa-long-arrow-right"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

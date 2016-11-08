@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="iamkala">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title set in pageTitle directive -->
+    <title page-title></title>
+
+    <!-- Font awesome -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Bootstrap and Fonts -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Inspinia CSS files -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link id="loadBefore" href="css/style.min.css" rel="stylesheet">
+    <link  href="css/kala.css" rel="stylesheet">
+
+
+</head>
+
+<body ng-controller="mainCtrl">
+
+    <!--Main view-->
+    <div ui-view></div>
+
+    <!--import scripts-->
+    <script type="text/javascript" src="js/angular/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/angular/angular-ui-router.min.js"></script>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script type="text/javascript" src="js/angular/angular-youtube-embed.min.js"></script>
+
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app.config.js"></script>
+    <script type="text/javascript" src="js/models/videos.js"></script>
+
+    <script type="text/javascript" src="js/controllers/controller.js"></script>
+    <script type="text/javascript" src="js/directives/directive.js"></script>
+
+
+</body>
+</html>

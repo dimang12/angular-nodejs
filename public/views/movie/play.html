@@ -1,0 +1,52 @@
+
+
+<div class="wrapper border-bottom white-bg page-heading ">
+    <video-top-menu></video-top-menu>
+</div>
+
+
+<div class="" ng-controller="PlayCtrl"></div>
+<div class="wrapper">
+    <div class="row border-bottom black-bg">
+        <div class="col-lg-8 col-md-8 no-padding">
+            <div class="col-lg-12 col-md-12 p-xs">
+                <div class="clearfix">
+                    <a ui-sref="index.play" class="btn btn-warning btn-outline btn-rounded btn-xs"> <i class="fa fa-arrow-left"></i> Prev </a>
+                    <a ui-sref="index.play" class="btn btn-warning btn-outline btn-rounded btn-xs pull-right">  Next <i class="fa fa-arrow-right"></i> </a>
+                </div>
+            </div>
+            <div class="text-center">
+                <figure responsive-video>
+                    <youtube-video video-id="videoCode" player-width="'100%'" player-height="'470'"></youtube-video>
+                </figure>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-4 white-bg no-padding" ng-include="'views/movie/playlist.html'">
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center m-t-lg">
+                <h1>
+                    Video you may want it!
+                </h1>
+                <small>The video or movie you look like you watching it.</small>
+            </div>
+            <span class="divider center"></span>
+        </div>
+        <div class="col-lg-12 col-md-12">
+            <div class="clearfix" ng-include="'views/movie/related.html'">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

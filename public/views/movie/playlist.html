@@ -1,0 +1,25 @@
+
+<div class="col-lg-12 col-md-12 p-sm gray-bg text-center" style="max-height: 240px; overflow: hidden;">
+    <img src="img/gallery/7.jpg" alt="" class="img-responsive" >
+</div>
+<div class="col-md-12 col-lg-12 p-xs">
+    <div class="feed-activity-list">
+
+        <div  ng-repeat="video in videos" class="feed-element">
+
+            <a ui-sref="videos.play({id:video._id})" >
+                <img alt="image" class="img-circle pull-left m-r-sm" ng-src="http://img.youtube.com/vi/{{video.link}}/sddefault.jpg">
+
+                <div class="media-body">
+
+                    <small class="pull-right">5m ago</small>
+                    <strong class="text-info">{{video.title}}</strong> posted a new blog. <br>
+                    <small class="text-muted">{{video.description}}</small>
+
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</div>
